@@ -1,0 +1,13 @@
+[project]
+name = "shopping-agent"
+version = "0.1.0"
+description = "WANDS catalog preparation, BM25, dense, and hybrid search"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0,<4", "numpy>=2.0", "sentence-transformers>=6.2,<7", "faiss-cpu>=1.15,<2", "truststore>=0.10,<1", "pydantic>=2.7,<3", "langgraph>=1.0,<2", "langchain-openai>=1.0,<2", "streamlit>=1.45,<2"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
